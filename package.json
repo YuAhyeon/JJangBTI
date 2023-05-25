@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/styled-components": "^5.1.26",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -18,7 +19,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.11.2",
-    "styled-components": "^6.0.0-rc.2"
+    "styled-components": "^6.0.0-rc.2",
+    "styled-reset": "^4.4.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
