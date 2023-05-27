@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import { Root } from './route';
-import MainPage from '../pages/MainPage';
+import Home from '../pages/Home';
 
 export default createBrowserRouter([
   {
@@ -8,7 +8,7 @@ export default createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <MainPage />,
+        element: <Home />,
       },
     ],
   },
