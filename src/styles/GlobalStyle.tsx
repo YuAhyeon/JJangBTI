@@ -1,8 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+import variables from './variables';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   ${reset};
+  ${variables}
 
   *, *:before, *:after {
     box-sizing: border-box;
