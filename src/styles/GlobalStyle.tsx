@@ -11,7 +11,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html, body {
-    font-size: var(--font-size-m);
+    background-color: var(--light-pink);
+    background-image: url('https://velog.velcdn.com/images/youa7878/post/59da6e5f-c4c2-4a52-a347-468b019f9a4b/image.png');
+    background-repeat : repeat;
   }
 
   a {
