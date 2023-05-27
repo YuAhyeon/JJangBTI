@@ -1,9 +1,9 @@
-import { css } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const flex = css`
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 `;
 
 export const justifyCenter = css`
@@ -32,8 +32,9 @@ export const colFlex = css`
 
 export const colFlexCenter = css`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const colFlexJustifyCenter = css`
@@ -44,4 +45,9 @@ export const colFlexJustifyCenter = css`
 export const colFlexAlignCenter = css`
   ${colFlex};
   align-items: center;
+`;
+
+export const Logo = styled.img`
+  width: 60px;
+  height: 60px;
 `;
