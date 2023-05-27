@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import MainContainer from '../styles/layout';
+import logoSrc from '../assets/logo.png';
+import { Logo } from '../styles/shared';
 
 function Home() {
-  return <Container>메인</Container>;
+  return (
+    <MainContainer>
+      <Logo src={logoSrc} />
+    </MainContainer>
+  );
 }
-
-const Container = styled.div``;
 
 export default Home;
