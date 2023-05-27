@@ -51,3 +51,18 @@ export const Logo = styled.img`
   width: 60px;
   height: 60px;
 `;
+
+export const Container = styled.article`
+  ${colFlexCenter}
+
+  width: 350px;
+  min-height: 500px;
+  overflow: hidden;
+
+  margin: 10px 0;
+  padding: 20px 35px;
+  border-radius: 20px;
+
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+`;
