@@ -22,17 +22,18 @@ const GlobalStyle = createGlobalStyle`
     background-repeat : repeat;
     font-family: 'rose';
   }
-
+  
   a {
     text-decoration: none;
     color: inherit;
   }
-
+  
   button {
     cursor: pointer;
     padding: 0;
     border: none;
     outline: none;
+    font-family: 'rose';
     background-color: transparent;
   }
   
