@@ -1,6 +1,6 @@
+import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import variables from './variables';
-import { createGlobalStyle } from 'styled-components';
 import NanumJangMiCe from '../assets/fonts/NanumJangMiCe.ttf';
 
 const GlobalStyle = createGlobalStyle`
