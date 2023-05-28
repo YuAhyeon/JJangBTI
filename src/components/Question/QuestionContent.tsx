@@ -33,9 +33,9 @@ const Button = styled.button`
   ${buttonCSS};
   height: 80px;
   margin: 10px 0;
-  font-size: 22px;
+  font-size: 23px;
   color: #ffffff;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 `;
 
 export default QuestionContent;
