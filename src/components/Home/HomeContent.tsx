@@ -33,6 +33,7 @@ const Button = styled(Link)`
   color: white;
   font-size: 30px;
   font-weight: bold;
+  font-family: 'rose';
 
   padding-left: 34px;
   letter-spacing: 10px;

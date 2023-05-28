@@ -47,17 +47,11 @@ export const colFlexAlignCenter = css`
   align-items: center;
 `;
 
-export const Logo = styled.img`
-  width: 60px;
-  height: 60px;
-  margin-top: 80px;
-`;
-
 export const Container = styled.article`
   ${colFlexCenter}
   width: 350px;
 
-  margin: 10px 0;
+  margin: 10px 0 50px;
   padding: 20px 35px;
   border-radius: 20px;
 
@@ -67,6 +61,8 @@ export const Container = styled.article`
 
 export const Subtitle = styled.h2`
   margin: 30px 0;
-  font-size: 25px;
+  font-size: 26px;
+  text-align: center;
   color: var(--black);
+  font-family: 'junghagsaeng';
 `;

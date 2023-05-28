@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { Root } from './route';
+import Root from './route';
 import Home from '../pages/Home';
+import Question from '../pages/Question';
 
 export default createBrowserRouter([
   {
@@ -9,6 +10,14 @@ export default createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/question',
+        element: <Question />,
+      },
+      {
+        path: '/question/:quesionId',
+        element: <Question />,
       },
     ],
   },
