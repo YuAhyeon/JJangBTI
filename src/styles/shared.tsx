@@ -47,12 +47,6 @@ export const colFlexAlignCenter = css`
   align-items: center;
 `;
 
-export const Logo = styled.img`
-  width: 60px;
-  height: 60px;
-  margin-top: 80px;
-`;
-
 export const Container = styled.article`
   ${colFlexCenter}
   width: 350px;
