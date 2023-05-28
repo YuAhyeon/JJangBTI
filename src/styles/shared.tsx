@@ -55,7 +55,6 @@ export const Logo = styled.img`
 
 export const Container = styled.article`
   ${colFlexCenter}
-
   width: 350px;
 
   margin: 10px 0;
@@ -64,4 +63,10 @@ export const Container = styled.article`
 
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+`;
+
+export const Subtitle = styled.h2`
+  margin: 30px 0;
+  font-size: 25px;
+  color: var(--black);
 `;
