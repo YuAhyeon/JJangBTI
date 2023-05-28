@@ -51,7 +51,7 @@ export const Container = styled.article`
   ${colFlexCenter}
   width: 350px;
 
-  margin: 10px 0;
+  margin: 10px 0 50px;
   padding: 20px 35px;
   border-radius: 20px;
 
