@@ -4,12 +4,13 @@ function Title() {
   return <Text>JJangBTI</Text>;
 }
 
-const Text = styled.p`
+const Text = styled.h1`
   font-size: 35px;
   font-weight: bold;
-  color: var(--pink);
   letter-spacing: 5px;
   text-shadow: 1px 1px 1px #292929;
+
+  color: var(--pink);
   margin-bottom: 20px;
 `;
 

@@ -50,14 +50,12 @@ export const colFlexAlignCenter = css`
 export const Logo = styled.img`
   width: 60px;
   height: 60px;
+  margin-top: 80px;
 `;
 
 export const Container = styled.article`
   ${colFlexCenter}
-
   width: 350px;
-  min-height: 500px;
-  overflow: hidden;
 
   margin: 10px 0;
   padding: 20px 35px;
@@ -65,4 +63,10 @@ export const Container = styled.article`
 
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+`;
+
+export const Subtitle = styled.h2`
+  margin: 30px 0;
+  font-size: 25px;
+  color: var(--black);
 `;
