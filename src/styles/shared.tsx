@@ -50,14 +50,13 @@ export const colFlexAlignCenter = css`
 export const Logo = styled.img`
   width: 60px;
   height: 60px;
+  margin-top: 80px;
 `;
 
 export const Container = styled.article`
   ${colFlexCenter}
 
   width: 350px;
-  min-height: 500px;
-  overflow: hidden;
 
   margin: 10px 0;
   padding: 20px 35px;
