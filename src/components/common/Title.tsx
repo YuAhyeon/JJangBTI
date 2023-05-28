@@ -5,6 +5,7 @@ function Title() {
 }
 
 const Text = styled.h1`
+  font-family: 'rose';
   font-size: 35px;
   font-weight: bold;
   letter-spacing: 5px;
