@@ -7,9 +7,10 @@ function Title() {
 const Text = styled.p`
   font-size: 35px;
   font-weight: bold;
-  color: var(--pink);
   letter-spacing: 5px;
   text-shadow: 1px 1px 1px #292929;
+
+  color: var(--pink);
   margin-bottom: 20px;
 `;
 
