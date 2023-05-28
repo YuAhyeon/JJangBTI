@@ -6,19 +6,19 @@ const buttonCSS = css`
   width: 100%;
   height: 60px;
 
-  background-color: #f7d53e;
-  background: linear-gradient(to bottom, #f7d53e 5%, #ffca38 100%);
+  background-color: #fdc938;
+  background: linear-gradient(to bottom, #fdc938 5%, #ffcd42 100%);
 
   border-radius: 6px;
-  border: 1px solid #f5b812;
+  border: 1px solid #ffae00;
   box-shadow: inset 0px 1px 0px 0px #fce2c1;
 
   padding: 6px 24px;
-  text-shadow: 1px 1px 1px #797979;
+  text-shadow: 1px 1px 0px #444444;
 
   &:hover {
-    background: linear-gradient(to bottom, #ffca38 5%, #f7d53e 100%);
-    background-color: #ffca38;
+    background: linear-gradient(to bottom, #ffcd42 5%, #fdc938 100%);
+    background-color: #fdc938;
   }
 
   &:active {
