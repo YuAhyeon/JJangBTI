@@ -1,7 +1,13 @@
-import React from 'react';
+import styled from 'styled-components';
+import Title from '../common/Title';
+import { Container } from '../../styles/shared';
 
 function ResultContent() {
-  return <div></div>;
+  return (
+    <Container>
+      <Title />
+    </Container>
+  );
 }
 
 export default ResultContent;
