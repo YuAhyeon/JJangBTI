@@ -15,7 +15,7 @@ function ProgressBar({ value }: ProgressBarInfo) {
 const Container = styled.div`
   width: 100%;
   height: 18px;
-  margin: 15px 0;
+  margin-top: 15px;
   overflow: hidden;
   border-radius: 25px;
   border: 1px solid var(--black);
