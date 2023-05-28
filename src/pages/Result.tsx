@@ -1,7 +1,12 @@
-import React from 'react';
+import Logo from '../components/common/Logo';
+import MainContainer from '../styles/layout';
 
 function Result() {
-  return <div></div>;
+  return (
+    <MainContainer>
+      <Logo />
+    </MainContainer>
+  );
 }
 
 export default Result;
