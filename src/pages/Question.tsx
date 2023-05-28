@@ -1,7 +1,13 @@
 import styled from 'styled-components';
+import Logo from '../components/common/Logo';
+import MainContainer from '../styles/layout';
 
 function Question() {
-  return <div>Question</div>;
+  return (
+    <MainContainer>
+      <Logo />
+    </MainContainer>
+  );
 }
 
 export default Question;
