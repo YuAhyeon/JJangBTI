@@ -1,25 +1,71 @@
+import { useRecoilState } from 'recoil';
 import { styled } from 'styled-components';
-import Title from '../common/Title';
+import { useParams, useNavigate } from 'react-router-dom';
+import totalScoreAtom from '../../recoil/atoms';
+
+import buttonCSS from '../common/Button';
 import ProgressBar from '../common/ProgressBar';
 import { Container, Subtitle } from '../../styles/shared';
-import QuestionImageSrc from '../../assets/question-images/Question1.png';
-import buttonCSS from '../common/Button';
 
-function QuestionContent() {
-  return (
-    <Container>
-      <Title />
-      <ProgressBar value={8} />
-      <Subtitle>질문</Subtitle>
-      <QuestionImage src={QuestionImageSrc} />
-      <Button aria-label="답변 버튼" type="button">
-        1
-      </Button>
-      <Button aria-label="답변 버튼" type="button">
-        2
-      </Button>
-    </Container>
-  );
+interface Question {
+  id: number;
+  title: string;
+  image: string;
+  answerA: string;
+  answerB: string;
+  gauge: number;
+  type: string;
+}
+
+interface QuestionData {
+  questionData: Question;
+}
+
+function QuestionContent({ questionData }: QuestionData) {
+  const [totalScore, setTotalScore] = useRecoilState(totalScoreAtom);
+
+  const { questionId } = useParams() as { questionId: string };
+  const navigate = useNavigate();
+
+  const handleClick = (buttonType: string) => {
+    if (buttonType === 'A') {
+      setTotalScore((prev) => ({
+        ...prev,
+        [questionData.type]: prev[questionData.type] + 1,
+      }));
+    }
+
+    if (questionData.id === 12) {
+      navigate(`/result`);
+    } else {
+      navigate(`/question/${String(questionData.id + 1)}`);
+    }
+  };
+
+  if (Number(questionId) === questionData.id) {
+    return (
+      <Container>
+        <ProgressBar value={(questionData.id / 12) * 100} />
+        <Subtitle>{questionData.title}</Subtitle>
+        <QuestionImage src={questionData.image} />
+        <Button
+          aria-label="답변 A 버튼"
+          type="button"
+          onClick={() => handleClick('A')}
+        >
+          {questionData.answerA}
+        </Button>
+        <Button
+          aria-label="답변 B 버튼"
+          type="button"
+          onClick={() => handleClick('B')}
+        >
+          {questionData.answerB}
+        </Button>
+      </Container>
+    );
+  }
+  return null;
 }
 
 const QuestionImage = styled.img`
@@ -33,9 +79,10 @@ const Button = styled.button`
   ${buttonCSS};
   height: 80px;
   margin: 10px 0;
-  font-size: 23px;
+  font-size: 21px;
   color: #ffffff;
   letter-spacing: 1.5px;
+  font-family: 'junghagsaeng';
 `;
 
 export default QuestionContent;
