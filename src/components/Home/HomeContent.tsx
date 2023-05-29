@@ -15,7 +15,7 @@ function HomeContent() {
         <br />
         짱구는 못말려 캐릭터는?
       </Subtitle>
-      <Button to="/question">START</Button>
+      <Button to="/question/1">START</Button>
     </Container>
   );
 }
