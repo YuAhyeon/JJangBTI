@@ -29,7 +29,6 @@ function QuestionContent({ questionData }: QuestionData) {
 
   const handleClick = (buttonType: string) => {
     if (buttonType === 'A') {
-      console.log(questionData.type);
       setTotalScore((prev) => ({
         ...prev,
         [questionData.type]: prev[questionData.type] + 1,
