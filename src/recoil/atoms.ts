@@ -1,6 +1,6 @@
 import { atom } from 'recoil';
 
-interface TotalScore {
+export interface TotalScore {
   EI: number;
   SN: number;
   TF: number;
