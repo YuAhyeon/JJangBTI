@@ -25,8 +25,8 @@ const Bar = styled.div<ProgressBarInfo>`
   width: ${({ value }) => `${value}%`};
   height: 100%;
 
-  background-color: var(--yellow);
-  border-right: ${({ value }) => value && `1px solid var(--black)`};
+  background-color: var(--green);
+  border-right: ${({ value }) => value < 100 && `1px solid var(--black)`};
 `;
 
 export default ProgressBar;
