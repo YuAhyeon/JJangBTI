@@ -1,7 +1,14 @@
 import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 
 function Title() {
-  return <Text>JJangBTI</Text>;
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+  };
+
+  return <Text onClick={handleClick}>JJangBTI</Text>;
 }
 
 const Text = styled.h1`
