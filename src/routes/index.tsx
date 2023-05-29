@@ -17,7 +17,7 @@ export default createBrowserRouter([
         element: <Question />,
       },
       {
-        path: '/question/:quesionId',
+        path: '/question/:questionId',
         element: <Question />,
       },
       {
