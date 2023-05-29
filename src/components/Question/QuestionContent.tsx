@@ -1,18 +1,11 @@
-import { useState } from 'react';
+import { useRecoilState } from 'recoil';
 import { styled } from 'styled-components';
 import { useParams, useNavigate } from 'react-router-dom';
+import totalScoreAtom from '../../recoil/atoms';
 
 import buttonCSS from '../common/Button';
 import ProgressBar from '../common/ProgressBar';
 import { Container, Subtitle } from '../../styles/shared';
-
-interface TotalScore {
-  EI: number;
-  SN: number;
-  TF: number;
-  JP: number;
-  [key: string]: number;
-}
 
 interface Question {
   id: number;
@@ -29,16 +22,10 @@ interface QuestionData {
 }
 
 function QuestionContent({ questionData }: QuestionData) {
-  const { questionId } = useParams() as { questionId: string };
-  const [totalScore, setTotalScore] = useState<TotalScore>({
-    EI: 0,
-    SN: 0,
-    TF: 0,
-    JP: 0,
-  });
-  const navigate = useNavigate();
+  const [totalScore, setTotalScore] = useRecoilState(totalScoreAtom);
 
-  console.log(totalScore);
+  const { questionId } = useParams() as { questionId: string };
+  const navigate = useNavigate();
 
   const handleClick = (buttonType: string) => {
     if (buttonType === 'A') {
