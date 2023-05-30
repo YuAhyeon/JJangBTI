@@ -81,9 +81,10 @@ export const Button = styled.button`
   ${buttonCSS};
   height: 40px;
   margin: 10px 0;
-  color: white;
+  color: #000000;
   font-size: 25px;
   font-family: 'junghagsaeng';
+  text-shadow: none;
 `;
 
 export default ResultContent;
