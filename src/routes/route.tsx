@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import GlobalStyle from '../styles/GlobalStyle';
-import KakaoLoadone from '../components/common/KakaoLoadone';
+import { KakaoLoadone, KakaoLoadtwo } from '../components/common/KakaoLoad';
 
 export default function Root() {
   return (
@@ -8,6 +8,7 @@ export default function Root() {
       <GlobalStyle />
       <Outlet />
       <KakaoLoadone />
+      <KakaoLoadtwo />
     </>
   );
 }
