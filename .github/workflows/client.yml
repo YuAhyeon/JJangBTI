@@ -12,7 +12,8 @@ jobs:
       - name: Setting .env
         run: |
           echo "VITE_SHARE_KAKAO_KEY=${{ secrets.VITE_SHARE_KAKAO_KEY }}" >> .env
-          echo "VITE_UNIT_ID=${{ secrets.VITE_SHARE_KAKAO_KEY }}" >> .env
+          echo "VITE_UNIT_ID_ONE=${{ secrets.VITE_UNIT_ID_ONE }}" >> .env
+          echo "VITE_UNIT_ID_TWO=${{ secrets.VITE_UNIT_ID_TWO }}" >> .env
           cat .env
       - name: Install dependencies
         run: yarn install
@@ -20,6 +21,7 @@ jobs:
       - name: Build
         run: |
           echo "VITE_SHARE_KAKAO_KEY=$VITE_SHARE_KAKAO_KEY" >> .env.production
-          echo "VITE_UNIT_ID=$VITE_UNIT_ID" >> .env.production
+          echo "VITE_UNIT_ID_ONE=$VITE_UNIT_ID_ONE" >> .env.production
+          echo "VITE_UNIT_ID_TWO=$VITE_UNIT_ID_TWO" >> .env.production
           yarn vite build --mode production
         working-directory: ./
