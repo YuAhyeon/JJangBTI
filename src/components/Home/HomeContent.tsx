@@ -2,14 +2,16 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Title from '../common/Title';
 import buttonCSS from '../common/Button';
-import MaengGuImage from '../../assets/Home.png';
 import { Container, Subtitle } from '../../styles/shared';
 
 function HomeContent() {
   return (
     <Container>
       <Title />
-      <HomeImage src={MaengGuImage} alt="맹구 이미지" />
+      <HomeImage
+        src="https://velog.velcdn.com/images/youa7878/post/6dbae30a-ad25-4463-904e-5520fc1e8edc/image.png"
+        alt="맹구 이미지"
+      />
       <Subtitle>
         나와 비슷한 성향을 가진
         <br />
