@@ -22,7 +22,7 @@ interface QuestionData {
 }
 
 function QuestionContent({ questionData }: QuestionData) {
-  const [totalScore, setTotalScore] = useRecoilState(totalScoreAtom);
+  const [, setTotalScore] = useRecoilState(totalScoreAtom);
 
   const { questionId } = useParams() as { questionId: string };
   const navigate = useNavigate();
