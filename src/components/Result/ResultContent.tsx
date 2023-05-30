@@ -73,7 +73,7 @@ function ResultContent() {
 const Image = styled.img`
   width: 100%;
   height: 680px;
-  object-fit: cover;
+  object-fit: contain;
   margin-bottom: 30px;
 `;
 
