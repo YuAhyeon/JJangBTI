@@ -12,6 +12,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
         working-directory: ./
+      - name: Set environment variables
+        run: |
+          echo "VITE_SHARE_KAKAO_KEY=${{ secrets.VITE_SHARE_KAKAO_KEY }}"
+          echo "VITE_UNIT_ID=${{ secrets.VITE_UNIT_ID }}"
       - name: Build
         run: yarn vite build
         working-directory: ./
