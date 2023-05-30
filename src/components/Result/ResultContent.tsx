@@ -22,7 +22,7 @@ function ResultContent() {
     navigate('/');
   };
 
-  const copyLink = 'https://github.com/youa7878';
+  const copyLink = 'https://jjangbti.netlify.app/';
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(copyLink);
