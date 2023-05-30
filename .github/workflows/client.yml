@@ -18,5 +18,5 @@ jobs:
         run: yarn install
         working-directory: ./
       - name: Build
-        run: yarn vite build
+        run: yarn vite build --mode production --define VITE_SHARE_KAKAO_KEY="$VITE_SHARE_KAKAO_KEY" --define VITE_UNIT_ID="$VITE_UNIT_ID"
         working-directory: ./
