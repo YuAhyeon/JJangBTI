@@ -79,10 +79,11 @@ const Button = styled.button`
   ${buttonCSS};
   height: 80px;
   margin: 10px 0;
-  font-size: 21px;
-  color: #ffffff;
+  font-size: 22px;
+  color: #000000;
   letter-spacing: 1.5px;
   font-family: 'junghagsaeng';
+  text-shadow: none;
 `;
 
 export default QuestionContent;

@@ -1,16 +1,3 @@
-// import Question1 from '../question-images/Question1.png';
-// import Question2 from '../question-images/Question2.png';
-// import Question3 from '../question-images/Question3.png';
-// import Question4 from '../question-images/Question4.png';
-// import Question5 from '../question-images/Question5.png';
-// import Question6 from '../question-images/Question6.png';
-// import Question7 from '../question-images/Question7.png';
-// import Question8 from '../question-images/Question8.png';
-// import Question9 from '../question-images/Question9.png';
-// import Question10 from '../question-images/Question10.png';
-// import Question11 from '../question-images/Question11.png';
-// import Question12 from '../question-images/Question12.png';
-
 const QuestionData = [
   {
     id: 1,
