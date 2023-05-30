@@ -6,8 +6,8 @@ export default function Root() {
   return (
     <>
       <GlobalStyle />
-      <Outlet />
       <KakaoLoadone />
+      <Outlet />
       <KakaoLoadtwo />
     </>
   );
