@@ -9,17 +9,14 @@ jobs:
     steps:
       - name: Checkout source code.
         uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
+      - name: Setting .env
+        run: |
+          echo "VITE_SHARE_KAKAO_KEY=${{ secrets.VITE_SHARE_KAKAO_KEY }}" >> .env
+          echo "VITE_UNIT_ID=${{ secrets.VITE_UNIT_ID }}" >> .env
+          cat .env
       - name: Install dependencies
         run: yarn install
         working-directory: ./
       - name: Build
         run: yarn vite build
         working-directory: ./
-      - name: Set environment variables
-        run: |
-          echo "VITE_SHARE_KAKAO_KEY=${{ secrets.VITE_SHARE_KAKAO_KEY }}" >> $GITHUB_ENV
-          echo "VITE_UNIT_ID=${{ secrets.VITE_UNIT_ID }}" >> $GITHUB_ENV
