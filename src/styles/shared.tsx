@@ -60,7 +60,7 @@ export const Container = styled.article`
 `;
 
 export const Subtitle = styled.h2`
-  margin: 30px 0;
+  margin: 20px 0 30px;
   font-size: 26px;
   text-align: center;
   color: var(--black);
