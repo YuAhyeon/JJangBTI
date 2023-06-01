@@ -4,7 +4,6 @@ import {
   KakaoLoadOne,
   KakaoLoadTwo,
   KakaoLoadThree,
-  KakaoLoadFour,
 } from '../components/common/KakaoLoad';
 
 export default function Root() {
@@ -15,7 +14,6 @@ export default function Root() {
       <Outlet />
       <KakaoLoadTwo />
       <KakaoLoadThree />
-      <KakaoLoadFour />
     </>
   );
 }
