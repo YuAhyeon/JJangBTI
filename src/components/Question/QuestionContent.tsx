@@ -46,6 +46,7 @@ function QuestionContent({ questionData }: QuestionData) {
     return (
       <Container>
         <ProgressBar value={(questionData.id / 12) * 100} />
+        <Stage>{`${questionData.id}/12`}</Stage>
         <Subtitle>{questionData.title}</Subtitle>
         <QuestionImage src={questionData.image} />
         <Button
@@ -73,6 +74,15 @@ const QuestionImage = styled.img`
   height: 150px;
   border-radius: 3px;
   margin-bottom: 30px;
+`;
+
+const Stage = styled.p`
+  margin-top: 10px;
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  font-family: 'junghagsaeng';
 `;
 
 const Button = styled.button`
