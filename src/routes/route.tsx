@@ -1,14 +1,21 @@
 import { Outlet } from 'react-router-dom';
 import GlobalStyle from '../styles/GlobalStyle';
-import { KakaoLoadone, KakaoLoadtwo } from '../components/common/KakaoLoad';
+import {
+  KakaoLoadOne,
+  KakaoLoadTwo,
+  KakaoLoadThree,
+  KakaoLoadFour,
+} from '../components/common/KakaoLoad';
 
 export default function Root() {
   return (
     <>
       <GlobalStyle />
-      <KakaoLoadone />
+      <KakaoLoadOne />
       <Outlet />
-      <KakaoLoadtwo />
+      <KakaoLoadTwo />
+      <KakaoLoadThree />
+      <KakaoLoadFour />
     </>
   );
 }
