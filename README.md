@@ -3,7 +3,6 @@
 </br>
 
 # 😎 JJangBTI
-
 👉🏻 프로젝트 유형: 솔로 프로젝트
 
 👉🏻 배포 링크: [JJangBTI](https://jjangbti.netlify.app/)
@@ -15,6 +14,7 @@
 </br>
 
 # 👋 Hello JJangBTI!!
+![](https://velog.velcdn.com/images/youa7878/post/0bb5d94f-a707-4216-8db4-24803adc224d/image.png)
 
 ## 🔮 JJangBTI 한 줄 소개
  `짱구는 못말려` 로 알아보는 간단한 MBTI 테스트입니다 😆
