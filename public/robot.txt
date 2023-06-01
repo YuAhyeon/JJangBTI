@@ -1,0 +1,3 @@
+Sitemap: https://jjangbti.netlify.app
+User-agent: *  
+Allow: /   
