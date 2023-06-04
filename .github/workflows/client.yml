@@ -18,7 +18,7 @@ jobs:
           echo "VITE_UNIT_ID_ONE=${{ secrets.VITE_UNIT_ID_ONE }}" >> $GITHUB_ENV
           echo "VITE_UNIT_ID_TWO=${{ secrets.VITE_UNIT_ID_TWO }}" >> $GITHUB_ENV
           echo "VITE_UNIT_ID_THREE=${{ secrets.VITE_UNIT_ID_THREE }}" >> $GITHUB_ENV
-          cat .env
+          cat $GITHUB_ENV
       - name: Build
         run: |
           echo "VITE_SHARE_KAKAO_KEY=$VITE_SHARE_KAKAO_KEY" >> .env.production
