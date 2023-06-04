@@ -9,19 +9,21 @@ jobs:
     steps:
       - name: Checkout source code.
         uses: actions/checkout@v2
-      - name: Setting .env
-        run: |
-          echo "VITE_SHARE_KAKAO_KEY=${{ secrets.VITE_SHARE_KAKAO_KEY }}" >> .env
-          echo "VITE_UNIT_ID_ONE=${{ secrets.VITE_UNIT_ID_ONE }}" >> .env
-          echo "VITE_UNIT_ID_TWO=${{ secrets.VITE_UNIT_ID_TWO }}" >> .env
-          cat .env
       - name: Install dependencies
         run: yarn install
         working-directory: ./
+      - name: Set environment variables
+        run: |
+          echo "VITE_SHARE_KAKAO_KEY=${{ secrets.VITE_SHARE_KAKAO_KEY }}" >> $GITHUB_ENV
+          echo "VITE_UNIT_ID_ONE=${{ secrets.VITE_UNIT_ID_ONE }}" >> $GITHUB_ENV
+          echo "VITE_UNIT_ID_TWO=${{ secrets.VITE_UNIT_ID_TWO }}" >> $GITHUB_ENV
+          echo "VITE_UNIT_ID_THREE=${{ secrets.VITE_UNIT_ID_THREE }}" >> $GITHUB_ENV
+          cat .env
       - name: Build
         run: |
           echo "VITE_SHARE_KAKAO_KEY=$VITE_SHARE_KAKAO_KEY" >> .env.production
           echo "VITE_UNIT_ID_ONE=$VITE_UNIT_ID_ONE" >> .env.production
           echo "VITE_UNIT_ID_TWO=$VITE_UNIT_ID_TWO" >> .env.production
+          echo "VITE_UNIT_ID_THREE=$VITE_UNIT_ID_THREE" >> .env.production
           yarn vite build --mode production
         working-directory: ./
