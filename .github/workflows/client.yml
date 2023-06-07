@@ -19,10 +19,10 @@ jobs:
           echo "VITE_UNIT_ID_TWO=$VITE_UNIT_ID_TWO" >> .env
           echo "VITE_UNIT_ID_THREE=$VITE_UNIT_ID_THREE" >> .env
         env:
-          VITE_API_URL: ${{ secrets.VITE_SHARE_KAKAO_KEY }}
-          VITE_ALADIN_TTBKEY: ${{ secrets.VITE_UNIT_ID_ONE }}
-          VITE_ALADIN_URL: ${{ secrets.VITE_UNIT_ID_TWO }}
-          VITE_ALADIN_URL: ${{ secrets.VITE_UNIT_ID_THREE }}
+          VITE_SHARE_KAKAO_KEY: ${{ secrets.VITE_SHARE_KAKAO_KEY }}
+          VITE_UNIT_ID_ONE: ${{ secrets.VITE_UNIT_ID_ONE }}
+          VITE_UNIT_ID_TWO: ${{ secrets.VITE_UNIT_ID_TWO }}
+          VITE_UNIT_ID_THREE: ${{ secrets.VITE_UNIT_ID_THREE }}
       - name: Build
         run: yarn build
         working-directory: ./
